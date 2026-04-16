@@ -1,34 +1,125 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starli | Tavo santykių asistentas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starli — Coming soon</title>
+  <meta name="description" content="An app to help you understand your relationships. Coming soon." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+
+    .coming-page {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 32px;
+    }
+
+    .coming-inner {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .coming-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--green);
+      letter-spacing: 0.5px;
+      margin-bottom: 56px;
+      display: block;
+    }
+
+    .coming-inner h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.2;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    .coming-inner h1 em {
+      font-style: italic;
+      color: var(--green);
+    }
+
+    .coming-inner p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 16px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coming-divider {
+      width: 40px;
+      height: 2px;
+      background: var(--green-muted);
+      margin: 40px auto;
+      border-radius: 2px;
+    }
+
+    .coming-why {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .coming-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .coming-footer {
+      text-align: center;
+      padding: 32px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .coming-footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .coming-footer a:hover { color: var(--green); }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">Starli</div>
-        </header>
-        
-        <main>
-            <div class="badge">Greitai pasirodys</div>
-            <h1>Tavo asmeninis <span>santykių asistentas</span></h1>
-            <p>Šiuo metu kuriame Starli – įrankį, kuris padės puoselėti ryšį ir geriau suprasti vienas kitą. Sugrįžk netrukus!</p>
-            
-            <div class="status-box">
-                <div class="dot-pulse"></div>
-                <span>Intensyviai dirbame prie programėlės</span>
-            </div>
-        </main>
 
-        <footer>
-            &copy; 2026 Starli. Visos teisės saugomos.
-        </footer>
-    </div>
+<div class="coming-page">
+  <div class="coming-inner">
+
+    <span class="coming-logo">Starli</span>
+
+    <span class="coming-label">Coming soon</span>
+    <h1>An app to help you<br /><em>understand your relationships.</em></h1>
+
+    <p>
+      We're building something we wish existed — a quiet space to reflect on the people who matter most to you.
+    </p>
+
+    <div class="coming-divider"></div>
+
+    <p class="coming-why">
+      Good relationships don't happen by accident. But no one teaches us how to show up better, day after day. Starli is our attempt to change that — one honest reflection at a time.
+    </p>
+
+  </div>
+</div>
+
+
+
 </body>
 </html>
