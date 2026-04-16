@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apie Starli — Kodėl sukūrėme šią programėlę</title>
+  <meta name="description" content="Starli gimė iš paprastos minties: kad geresni santykiai prasideda nuo savęs supratimo." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-hero {
+      padding: 96px 0 72px;
+      border-bottom: 1px solid var(--green-muted);
+    }
+
+    .about-hero h1 { margin-bottom: 24px; max-width: 620px; }
+    .about-hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.75;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 56px;
+    }
+
+    .value-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      border-left: 4px solid var(--green);
+    }
+
+    .value-card h3 {
+      margin-bottom: 12px;
+      color: var(--green-dark);
+    }
+
+    .value-card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .story-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 96px 32px;
+    }
+
+    .story-section p {
+      color: #374151;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+
+    .mission-banner {
+      background: var(--green);
+      color: white;
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      text-align: center;
+      margin: 48px 0;
+    }
+
+    .mission-banner h2 {
+      font-style: italic;
+      font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+      margin-bottom: 16px;
+    }
+
+    .mission-banner p { opacity: 0.8; font-size: 0.95rem; }
+
+    @media (max-width: 640px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .story-section { padding: 64px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Starli</a>
+  <ul class="nav-links">
+    <li><a href="about.html">Apie</a></li>
+    <li><a href="support.html">Pagalba</a></li>
+    <li><a href="index.html#download" class="nav-cta">Atsisiųsti</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="container">
+
+    <div class="about-hero">
+      <div class="section-label">Mūsų istorija</div>
+      <h1>Santykiai yra<br /><em style="color:var(--green); font-style:italic;">sunkiausias dalykas.</em><br />Ir svarbiausias.</h1>
+      <p>Starli gimė iš paprastos minties: kiekvienas iš mūsų nori geresnių santykių, bet niekas nemoko, kaip tai daryti kasdien.</p>
+    </div>
+
+    <div class="story-section" style="padding-top:64px; padding-bottom:0;">
+      <h2 style="margin-bottom:24px;">Kodėl Starli egzistuoja</h2>
+      <p>
+        Mes visi žinome tą jausmą — kai pokalbis su mylimu žmogumi baigiasi ne taip, kaip norėjome. Kai galvojame, kad galėjome pasakyti ką nors kitaip. Kai suvoktame, kad nedavėme pakankamai dėmesio.
+      </p>
+      <p>
+        Tradicinė terapija ir santykių knygos padeda, bet jų nepakanka kasdieniam gyvenimui. Mums reikėjo kažko, kas būtų čia pat — kuomet reikia.
+      </p>
+      <p>
+        Taip atsirado Starli. Ne kaip terapeutas. Ne kaip patarėjas. Kaip draugas, kuris klauso, mąsto kartu su tavimi ir padeda pamatyti tai, ko pats nematai.
+      </p>
+    </div>
+
+    <div class="mission-banner">
+      <h2>„Kiekvienas žmogus nusipelno turėti gerus santykius — ir tam nereikia būti tobulam."</h2>
+      <p>Starli misija · 2024</p>
+    </div>
+
+  </div>
+
+  <section style="background: white; padding: 96px 0;">
+    <div class="container">
+      <div class="section-label">Mūsų vertybės</div>
+      <h2 style="margin-bottom:0;">Kuo tikime</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>🌱 Augimas, ne tobulumas</h3>
+          <p>Nesiekiame, kad būtum tobulas partneris ar tobulas draugas. Siekiame, kad kiekvieną dieną būtum šiek tiek geresnis nei vakar.</p>
+        </div>
+        <div class="value-card">
+          <h3>🔒 Privatus erdvas</h3>
+          <p>Tavo santykių istorija yra tik tavo. Neparduodame duomenų. Neskirstome jų reklamai. Tavo pasitikėjimas mums — svarbiausia.</p>
+        </div>
+        <div class="value-card">
+          <h3>💚 Be sprendimų</h3>
+          <p>Starli nekritikuoja. Nekaltina. Tik klauso ir padeda suprasti. Nes patys geriausi santykiai prasideda nuo savęs supratimo.</p>
+        </div>
+        <div class="value-card">
+          <h3>⚡ Maži žingsniai</h3>
+          <p>Dideli pokyčiai atsiranda iš mažų sprendimų. Vienas sąmoningas žodis, vienas dėmesingas gestas gali pakeisti viską.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="text-align:center; padding: 96px 32px;">
+    <div class="section-label">Prisijunk</div>
+    <h2>Pradėk šiandien</h2>
+    <p style="color:var(--text-muted); margin: 16px auto 36px; max-width:440px;">Tūkstančiai žmonių jau naudoja Starli, kad pagerintų svarbiausius ryšius savo gyvenime.</p>
+    <a href="index.html#download" class="btn btn-primary">Atsisiųsti nemokamai</a>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <span class="footer-logo">Starli</span>
+    <ul class="footer-links">
+      <li><a href="about.html">Apie</a></li>
+      <li><a href="support.html">Pagalba</a></li>
+      <li><a href="privacy.html">Privatumas</a></li>
+      <li><a href="terms.html">Naudojimo sąlygos</a></li>
+    </ul>
+    <p>© 2025 Starli. Visos teisės saugomos.</p>
+  </div>
+</footer>
+
+</body>
+</html>
