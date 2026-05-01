@@ -3,124 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starli - Coming soon</title>
-  <meta name="description" content="An app to help you understand your relationships. Coming soon." />
+  <meta name="robots" content="index, follow" />
+  <title>Starli — Relationship Reflection App</title>
   <link rel="icon" type="image/png" href="starli.png" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body { display: flex; flex-direction: column; min-height: 100vh; }
-
-    .coming-page {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 48px 32px;
-    }
-
-    .coming-inner {
-      max-width: 480px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .coming-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      font-weight: 500;
-      color: var(--green);
-      letter-spacing: 0.5px;
-      margin-bottom: 56px;
-      display: block;
-    }
-
-    .coming-inner h1 {
-      font-size: clamp(2rem, 5vw, 2.8rem);
-      line-height: 1.2;
-      margin-bottom: 24px;
-      color: var(--text);
-    }
-
-    .coming-inner h1 em {
-      font-style: italic;
-      color: var(--green);
-    }
-
-    .coming-inner p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      line-height: 1.75;
-      margin-bottom: 16px;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .coming-divider {
-      width: 40px;
-      height: 2px;
-      background: var(--green-muted);
-      margin: 40px auto;
-      border-radius: 2px;
-    }
-
-    .coming-why {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      line-height: 1.8;
-      max-width: 380px;
-      margin: 0 auto;
-    }
-
-    .coming-label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 14px;
-      display: block;
-    }
-
-    .coming-footer {
-      text-align: center;
-      padding: 32px;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-
-    .coming-footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-    }
-
-    .coming-footer a:hover { color: var(--green); }
-  </style>
 </head>
-<body>
+<body class="page">
+  <nav>
+    <a href="index.html" class="nav-logo">Starli</a>
+    <ul class="nav-links">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="coming-page">
-  <div class="coming-inner">
+  <section>
+    <div class="container">
+      <p class="section-label">Relationship Reflection App</p>
+      <h1>Build stronger relationships through <em>daily reflection</em>.</h1>
+      <p>
+        Starli is a calm space to think about your communication, habits, and emotional patterns so you can show up better in the relationships that matter most.
+      </p>
+      <p>
+        <a href="#features" class="btn btn-outline">Learn More</a>
+      </p>
+    </div>
+  </section>
 
-    <span class="coming-logo">Starli</span>
+  <section id="features">
+    <div class="container">
+      <p class="section-label">Features</p>
+      <h2>Designed for intentional growth</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px;">
+        <div>
+          <h3>Guided Reflection Prompts</h3>
+          <p>Use structured prompts to reflect on conversations, emotions, and moments that shape your connection with others.</p>
+        </div>
+        <div>
+          <h3>Relationship Insights</h3>
+          <p>Track recurring themes over time and notice patterns that help you improve communication and trust.</p>
+        </div>
+        <div>
+          <h3>Private by Default</h3>
+          <p>Your reflections are personal. Starli is built to protect your data and keep your writing secure.</p>
+        </div>
+        <div>
+          <h3>Simple Daily Practice</h3>
+          <p>Spend a few minutes each day building awareness and creating healthier relationship habits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <span class="coming-label">Coming soon</span>
-    <h1>An app to help you<br /><em>understand your relationships.</em></h1>
-
-    <p>
-      We're building something we wish existed - a quiet space to reflect on the people who matter most to you.
-    </p>
-
-    <div class="coming-divider"></div>
-
-    <p class="coming-why">
-      Good relationships don't happen by accident. But no one teaches us how to show up better, day after day. Starli is our attempt to change that - one honest reflection at a time.
-    </p>
-
-  </div>
-</div>
-
-
-
+  <footer>
+    <span class="footer-logo">Starli</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>© 2026 Starli. All rights reserved.</p>
+  </footer>
 </body>
 </html>
