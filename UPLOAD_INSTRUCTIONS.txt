@@ -1,0 +1,35 @@
+Starli Labs website package
+===========================
+
+Upload every file in this folder to the root of the GitHub Pages repository that serves starli.app.
+
+Required pages:
+- index.html
+- digital-downloads.html
+- starli.html
+- privacy.html
+- digital-downloads-privacy.html
+- terms.html
+- digital-downloads-terms.html
+- contact.html
+- style.css
+- robots.txt
+- sitemap.xml
+- .nojekyll
+- CNAME
+
+Required images:
+- starli.png
+- 01-auto-delivery.png
+- 02-product-files.png
+- 03-secure-links.png
+- 04-track-orders.png
+- 05-email-automation.png
+- 06-customer-download-page.png
+- 07-creator-workflow.png
+
+Wix App Market URLs:
+Privacy Policy: https://starli.app/digital-downloads-privacy.html
+Terms of Use: https://starli.app/digital-downloads-terms.html
+Support / Contact: https://starli.app/contact.html
+Company website: https://starli.app/
