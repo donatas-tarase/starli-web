@@ -11,20 +11,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a href="index.html" class="brand" aria-label="Starli Labs home">
-      <img src="starli.png" alt="" class="brand-mark" />
-      <span>Starli Labs</span>
-    </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html#products">Products</a>
-      <a href="digital-downloads.html">Digital Downloads</a>
-      <a href="starli.html">Starli</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav-wrap">
+      <a href="./" class="brand" aria-label="Starli home">
+        <img src="starli.png" alt="" class="brand-mark" width="36" height="36" />
+        <span>Starli Labs</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="./">Starli</a>
+        <a href="digital-downloads.html">Digital Downloads</a>
+        <a href="labs/">Starli Labs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-secondary" data-analytics-id="header-app-store-cta" href="app-store.html">Download Starli</a>
+      </div>
+    </div>
   </header>
 
-  <main class="legal-page">
+  <main id="main" class="legal-page">
     <article class="legal-container">
       <p class="eyebrow">Starli Labs</p>
       <h1>Terms of Service</h1>
@@ -96,18 +102,19 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="index.html" class="footer-brand">Starli Labs</a>
+        <a href="./" class="footer-brand">Starli Labs</a>
         <p>Practical apps for stores, creators, and everyday workflows.</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="./">Starli</a>
         <a href="digital-downloads.html">Digital Downloads</a>
-        <a href="starli.html">Starli</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
-      </div>
+        <a href="labs/">Starli Labs</a>
+      </nav>
     </div>
-    <div class="container footer-bottom">© 2026 Starli Labs, MB. All rights reserved.</div>
+    <div class="container footer-bottom">© 2026 Starli labs, MB. All rights reserved.</div>
   </footer>
 </body>
 </html>

@@ -4,148 +4,278 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="Starli Labs builds practical web, iOS, Android, and Wix apps for stores, creators, and everyday workflows." />
-  <meta property="og:title" content="Starli Labs — Apps for practical digital workflows" />
-  <meta property="og:description" content="Software products by Starli Labs, including the Starli iOS app and Digital Downloads for Wix Stores." />
+  <meta name="description" content="Starli is a private iPhone reflection app for the conversations you keep replaying. Notice how you communicate and show up more thoughtfully next time." />
+  <meta property="og:title" content="Starli — Private Relationship Reflection App for iPhone" />
+  <meta property="og:description" content="A private reflection practice that helps you notice how you communicate and show up more thoughtfully next time." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://starli.app/" />
   <meta property="og:image" content="https://starli.app/starli.png" />
-  <title>Starli Labs — Web, iOS, Android & Wix Apps</title>
+  <meta property="og:image:alt" content="Starli app icon" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Starli — Private Relationship Reflection App for iPhone" />
+  <meta name="twitter:description" content="For the conversations you keep replaying." />
+  <meta name="twitter:image" content="https://starli.app/starli.png" />
+  <title>Starli — Private Relationship Reflection App for iPhone</title>
   <link rel="canonical" href="https://starli.app/" />
+  <link rel="alternate" hreflang="en" href="https://starli.app/" />
+  <link rel="alternate" hreflang="lt" href="https://starli.app/lt/" />
+  <link rel="alternate" hreflang="x-default" href="https://starli.app/" />
   <link rel="icon" type="image/png" href="starli.png" />
+  <link rel="apple-touch-icon" href="starli.png" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Starli Mind",
+    "alternateName": "Starli",
+    "url": "https://starli.app/",
+    "downloadUrl": "https://apps.apple.com/us/app/starli-mind/id6768002791",
+    "operatingSystem": "iOS 15.1 or later",
+    "applicationCategory": "LifestyleApplication",
+    "supportedLanguage": ["en", "lt"],
+    "author": {
+      "@type": "Organization",
+      "name": "Starli labs, MB",
+      "url": "https://starli.app/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Starli labs, MB",
+    "url": "https://starli.app/",
+    "logo": "https://starli.app/starli.png",
+    "email": "support@starli.app"
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a href="index.html" class="brand" aria-label="Starli Labs home">
-      <img src="starli.png" alt="" class="brand-mark" />
-      <span>Starli Labs</span>
-    </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html#products">Products</a>
-      <a href="digital-downloads.html">Digital Downloads</a>
-      <a href="starli.html">Starli</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav-wrap">
+      <a href="./" class="brand" aria-label="Starli home">
+        <img src="starli.png" alt="" class="brand-mark" width="36" height="36" />
+        <span>Starli</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="blog/">Blog</a>
+        <a href="labs/">Starli Labs</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language switcher">
+          <a href="./" aria-current="true">EN</a>
+          <a href="lt/">LT</a>
+        </div>
+        <a class="button button-primary" id="header-app-store-cta" data-analytics-id="header-app-store-cta" href="app-store.html">Download on the App Store</a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="hero hero-company">
+  <main id="main">
+    <section class="hero starli-hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Web, iOS, Android & Wix apps</p>
-          <h1>Software products for simpler digital workflows.</h1>
-          <p class="lead">Starli Labs builds focused apps that help people and businesses save time, stay organized, and move through important tasks with less friction.</p>
+          <p class="eyebrow">Private relationship reflection for iPhone</p>
+          <h1>For the conversations you keep replaying.</h1>
+          <p class="lead">A private reflection practice that helps you notice how you communicate and show up more thoughtfully next time.</p>
           <div class="button-row">
-            <a class="button button-primary" href="digital-downloads.html">Explore Digital Downloads</a>
-            <a class="button button-secondary" href="starli.html">Explore Starli</a>
+            <a class="button button-primary" id="hero-app-store-cta" data-analytics-id="hero-app-store-cta" href="app-store.html">Download on the App Store</a>
+            <a class="button button-secondary" href="#how-it-works">See how it works</a>
           </div>
+          <p class="factual-note">Available in English and Lithuanian. Starli is an individual reflection app, not a social network.</p>
         </div>
 
-        <div class="hero-panel company-panel" aria-label="Starli Labs product overview">
-          <div class="panel-topbar"><span></span><span></span><span></span></div>
-          <div class="product-stack">
-            <article class="mini-product-card highlighted">
-              <div class="mini-icon blue">↧</div>
-              <div>
-                <h2>Digital Downloads</h2>
-                <p>Automatic file delivery for Wix Stores.</p>
+        <div class="hero-art reflection-visual" aria-label="Abstract Starli reflection preview">
+          <div class="phone-preview">
+            <div class="phone-screen">
+              <span class="app-chip"><img src="starli.png" alt="" width="24" height="24" /> Starli</span>
+              <h2 class="reflection-question">How well did I listen today?</h2>
+              <p class="reflection-copy">A quiet moment to notice what happened, what you felt, and what you might carry into the next conversation.</p>
+              <div class="reflection-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="insight-card">
+                <span>Reflection note</span>
+                <strong>Pause before reacting. Ask one more question.</strong>
               </div>
-            </article>
-            <article class="mini-product-card">
-              <div class="mini-icon green">S</div>
-              <div>
-                <h2>Starli</h2>
-                <p>A calm iOS app for relationship reflection.</p>
-              </div>
-            </article>
-            <article class="mini-product-card">
-              <div class="mini-icon dark">+</div>
-              <div>
-                <h2>More products</h2>
-                <p>Small, useful tools for creators and teams.</p>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="products" class="section section-soft">
+    <section class="section section-soft">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Products</p>
-          <h2>Two focused apps, one practical product mindset.</h2>
-          <p>Starli Labs designs products around clear jobs: sell and deliver files automatically, or build a steady personal reflection habit.</p>
+          <p class="eyebrow">When Starli helps</p>
+          <h2>That moment after a conversation can teach you something.</h2>
+          <p>Starli is for the everyday relationship moments that linger: the reply you wish you gave, the tone you noticed too late, or the pattern that keeps repeating.</p>
         </div>
-
-        <div class="product-grid">
-          <article class="product-card product-card-large">
-            <div class="card-badge">Wix App</div>
-            <h3>Digital Downloads</h3>
-            <p>Connect files to Wix products and variants, send secure download links after paid orders, and manage access from one clean dashboard.</p>
-            <ul class="check-list">
-              <li>Attach files to products and variants</li>
-              <li>Send download links after payment</li>
-              <li>Track downloads, expiry dates, and access</li>
-            </ul>
-            <a class="text-link" href="digital-downloads.html">View product page →</a>
+        <div class="problem-grid">
+          <article class="card">
+            <h3>You replay what happened</h3>
+            <p>Slow down the moment without turning it into a public post, a performance, or a spiral.</p>
           </article>
+          <article class="card">
+            <h3>You reacted before understanding</h3>
+            <p>Look at what you needed, what you heard, and what you might ask next time.</p>
+          </article>
+          <article class="card">
+            <h3>You want to communicate with more care</h3>
+            <p>Build a small practice around noticing, listening, and returning to conversations with more intention.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="product-card product-card-large">
-            <div class="card-badge green-badge">iOS App</div>
-            <h3>Starli</h3>
-            <p>A private reflection app designed to help users notice communication patterns, build awareness, and strengthen everyday relationships.</p>
-            <ul class="check-list">
-              <li>Guided daily reflection prompts</li>
-              <li>Relationship-focused insights</li>
-              <li>Simple, calm, private experience</li>
-            </ul>
-            <a class="text-link" href="starli.html">View product page →</a>
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">How Starli works</p>
+          <h2>A few quiet minutes after something meaningful.</h2>
+          <p>The product experience is designed around private guided reflection, not public sharing or pressure to perform.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <h3>Open a guided reflection</h3>
+            <p>Start from a prompt that helps you think about a recent relationship moment clearly.</p>
+          </article>
+          <article class="step-card">
+            <h3>Think through what happened</h3>
+            <p>Write or talk through what you noticed, how you reacted, and what mattered in the moment.</p>
+          </article>
+          <article class="step-card">
+            <h3>Carry one insight forward</h3>
+            <p>Notice patterns over time and bring a more thoughtful response into your next conversation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-warm">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Built for private communication awareness.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-pill">
+            <span class="pill-icon green-pill">?</span>
+            <h3>Guided reflection prompts</h3>
+            <p>Questions help you move from vague replaying into a clearer reflection.</p>
+          </article>
+          <article class="feature-pill">
+            <span class="pill-icon gold-pill">•</span>
+            <h3>Simple repeatable practice</h3>
+            <p>Return to a small habit after meaningful, tense, or important conversations.</p>
+          </article>
+          <article class="feature-pill">
+            <span class="pill-icon blue-pill">~</span>
+            <h3>Pattern awareness</h3>
+            <p>Notice how you listen, react, withdraw, explain, or return to a topic over time.</p>
+          </article>
+          <article class="feature-pill">
+            <span class="pill-icon green-pill">S</span>
+            <h3>Private by default</h3>
+            <p>Your reflections are personal. Starli is not built around a public feed.</p>
+          </article>
+          <article class="feature-pill">
+            <span class="pill-icon gold-pill">1</span>
+            <h3>One relationship moment at a time</h3>
+            <p>Focus on the conversation in front of you instead of trying to fix everything at once.</p>
+          </article>
+          <article class="feature-pill">
+            <span class="pill-icon blue-pill">LT</span>
+            <h3>English and Lithuanian</h3>
+            <p>Use Starli in the language that feels more natural for reflection.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split-grid">
-        <div>
-          <p class="eyebrow">How we build</p>
-          <h2>Clean workflows first. Complexity later.</h2>
-          <p class="section-copy">Our products are built around simple setup, understandable screens, and workflows that do not require users to fight the tool before getting value from it.</p>
+      <div class="container prompt-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Example reflection</p>
+          <h2>Start with one honest question.</h2>
+          <p>This is an illustrative prompt, not a real user reflection or a promise of a specific result.</p>
         </div>
-        <div class="principles-grid">
-          <article class="principle-card">
-            <h3>Useful automation</h3>
-            <p>Automate repetitive steps while keeping users in control.</p>
-          </article>
-          <article class="principle-card">
-            <h3>Product clarity</h3>
-            <p>Use plain language, direct navigation, and focused feature sets.</p>
-          </article>
-          <article class="principle-card">
-            <h3>Privacy-aware design</h3>
-            <p>Collect only what is needed and keep legal pages easy to find.</p>
-          </article>
-          <article class="principle-card">
-            <h3>Reliable delivery</h3>
-            <p>Build flows that help people complete important tasks without manual workarounds.</p>
-          </article>
+        <div class="prompt-card">
+          <blockquote>“How well did I listen today?”</blockquote>
+          <p>You might notice when you stayed present, when you started preparing your answer, and what you could ask before assuming next time.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section id="privacy" class="section section-soft">
+      <div class="container boundary-layout">
+        <div>
+          <p class="eyebrow">Privacy and boundaries</p>
+          <h2>Personal reflection, not public performance.</h2>
+          <p class="section-copy">Starli is an individual reflection tool. It is not a social network, does not ask your partner to participate, and should not be treated as therapy, counseling, medical advice, or emergency support.</p>
+        </div>
+        <ul class="boundary-list">
+          <li><strong>No public feed.</strong> Starli is for your own private reflection practice.</li>
+          <li><strong>No partner required.</strong> You can reflect on your own after a conversation.</li>
+          <li><strong>Clear legal pages.</strong> Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a> for the formal details.</li>
+          <li><strong>Professional support still matters.</strong> If you need urgent help or professional care, contact a qualified professional or local emergency service.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-heading centered">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions people usually ask first.</h2>
+        </div>
+        <div class="faq-grid">
+          <details class="faq-card">
+            <summary>What is Starli?</summary>
+            <p>Starli is a private iOS reflection app for thinking through relationship moments, noticing communication patterns, and building a calmer reflection habit.</p>
+          </details>
+          <details class="faq-card">
+            <summary>Do I need my partner to use it?</summary>
+            <p>No. Starli is designed as an individual reflection tool. You can use it on your own after meaningful or difficult conversations.</p>
+          </details>
+          <details class="faq-card">
+            <summary>Is Starli therapy?</summary>
+            <p>No. Starli is not therapy, counseling, medical treatment, diagnosis, crisis support, or a replacement for professional help.</p>
+          </details>
+          <details class="faq-card">
+            <summary>Is my reflection public?</summary>
+            <p>No. Starli is not a social network and is not built around public posting or a public feed.</p>
+          </details>
+          <details class="faq-card">
+            <summary>Which languages are available?</summary>
+            <p>Starli supports English and Lithuanian.</p>
+          </details>
+          <details class="faq-card">
+            <summary>Which devices are supported?</summary>
+            <p>Starli is available through the App Store for iPhone. The App Store listing notes iOS 15.1 or later compatibility.</p>
+          </details>
+          <details class="faq-card">
+            <summary>How do I download the app?</summary>
+            <p>Use any “Download on the App Store” button on this site to open the official Starli Mind App Store listing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-deep">
       <div class="container cta-grid">
         <div>
-          <p class="eyebrow light">Starli Labs</p>
-          <h2>Need support, legal information, or company details?</h2>
-          <p>Find privacy policies, terms, and contact information for Starli Labs and its products.</p>
+          <p class="eyebrow light">Starli for iPhone</p>
+          <h2>Give the conversation a quieter place to land.</h2>
+          <p>Open Starli after the moment, reflect privately, and carry one clearer insight into what comes next.</p>
         </div>
         <div class="button-row end">
-          <a class="button button-light" href="privacy.html">Privacy Policy</a>
-          <a class="button button-outline-light" href="terms.html">Terms</a>
-          <a class="button button-outline-light" href="contact.html">Contact</a>
+          <a class="button button-light" id="final-app-store-cta" data-analytics-id="final-app-store-cta" href="app-store.html">Download on the App Store</a>
+          <a class="button button-outline-light" href="blog/">Read the blog</a>
         </div>
       </div>
     </section>
@@ -154,18 +284,20 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="index.html" class="footer-brand">Starli Labs</a>
-        <p>Practical apps for stores, creators, and everyday workflows.</p>
+        <a href="./" class="footer-brand">Starli</a>
+        <p>A private reflection practice by Starli labs, MB.</p>
       </div>
-      <div class="footer-links">
-        <a href="digital-downloads.html">Digital Downloads</a>
-        <a href="starli.html">Starli</a>
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
-      </div>
+        <a href="blog/">Blog</a>
+        <a href="labs/">Starli Labs</a>
+        <a href="digital-downloads.html">Digital Downloads</a>
+        <a href="lt/">LT</a>
+      </nav>
     </div>
-    <div class="container footer-bottom">© 2026 Starli Labs, MB. All rights reserved.</div>
+    <div class="container footer-bottom">© 2026 Starli labs, MB. All rights reserved.</div>
   </footer>
 </body>
 </html>

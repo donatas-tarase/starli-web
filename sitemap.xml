@@ -2,34 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://starli.app/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://starli.app/lt/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://starli.app/blog/</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://starli.app/blog/reflect-after-difficult-conversation.html</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://starli.app/lt/blog/</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://starli.app/lt/blog/refleksija-po-sunkaus-pokalbio.html</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://starli.app/labs/</loc>
+    <lastmod>2026-06-25</lastmod>
   </url>
   <url>
     <loc>https://starli.app/digital-downloads.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://starli.app/starli.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
   </url>
   <url>
     <loc>https://starli.app/privacy.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://starli.app/digital-downloads-privacy.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
   </url>
   <url>
     <loc>https://starli.app/terms.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://starli.app/digital-downloads-terms.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
   </url>
   <url>
     <loc>https://starli.app/contact.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://starli.app/digital-downloads-privacy.html</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://starli.app/digital-downloads-terms.html</loc>
+    <lastmod>2026-06-25</lastmod>
   </url>
 </urlset>
