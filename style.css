@@ -374,125 +374,209 @@ p {
   position: relative;
 }
 
-.app-screenshot-card {
+.iphone-showcase {
   justify-self: center;
-  width: min(100%, 430px);
-  margin: 0;
-  padding: clamp(10px, 2vw, 16px);
-  border: 1px solid rgba(229, 225, 216, 0.92);
-  border-radius: 30px;
-  background: rgba(255, 253, 249, 0.74);
-  box-shadow: var(--shadow);
+  width: min(100%, 405px);
 }
 
-.app-screenshot-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
+.iphone-frame {
+  position: relative;
+  padding: 13px;
+  border: 1px solid rgba(31, 42, 35, 0.18);
+  border-radius: 52px;
+  background: linear-gradient(145deg, #141b17, var(--forest));
+  box-shadow: 0 28px 72px rgba(31, 42, 35, 0.24);
 }
 
-.reflection-visual {
-  border: 1px solid rgba(229, 225, 216, 0.9);
-  border-radius: 32px;
-  padding: clamp(18px, 4vw, 30px);
-  background:
-    linear-gradient(145deg, rgba(255, 253, 249, 0.94), rgba(238, 232, 222, 0.72)),
-    radial-gradient(circle at 20% 12%, rgba(201, 160, 90, 0.18), transparent 26%);
-  box-shadow: var(--shadow);
+.iphone-frame::before,
+.iphone-frame::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  border-radius: 99px;
+  background: #25352b;
 }
 
-.phone-preview {
-  width: min(100%, 380px);
-  margin: 0 auto;
-  padding: 14px;
-  border: 1px solid rgba(36, 60, 47, 0.16);
+.iphone-frame::before {
+  left: -4px;
+  top: 145px;
+  height: 72px;
+}
+
+.iphone-frame::after {
+  right: -4px;
+  top: 188px;
+  height: 94px;
+}
+
+.iphone-screen {
+  overflow: hidden;
+  min-height: 740px;
+  padding: 16px 20px 18px;
   border-radius: 40px;
-  background: var(--forest);
-  box-shadow: 0 28px 64px rgba(36, 60, 47, 0.22);
+  background: var(--warm-white);
 }
 
-.phone-screen {
-  min-height: 520px;
-  padding: 26px;
-  border-radius: 30px;
-  background:
-    radial-gradient(circle at 88% 10%, rgba(175, 195, 218, 0.3), transparent 25%),
-    var(--warm-white);
-}
-
-.app-chip {
-  display: inline-flex;
+.ios-status {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 9px;
-  padding: 8px 11px;
-  border: 1px solid rgba(111, 148, 107, 0.24);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.ios-status span:last-child {
+  justify-self: end;
+  letter-spacing: -0.18em;
+}
+
+.dynamic-island {
+  width: 92px;
+  height: 27px;
   border-radius: 999px;
+  background: #050706;
+}
+
+.app-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.leaf-mark,
+.toolbar-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   color: var(--forest);
-  background: rgba(169, 184, 160, 0.18);
-  font-size: 0.86rem;
-  font-weight: 800;
+  background: rgba(169, 184, 160, 0.28);
+  font-weight: 900;
 }
 
-.app-chip img {
-  width: 24px;
-  height: 24px;
-  border-radius: 7px;
-}
-
-.reflection-question {
-  margin: 46px 0 18px;
-  color: var(--forest);
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  line-height: 1.04;
-}
-
-.reflection-copy {
-  margin: 0;
-  color: var(--muted);
+.toolbar-icon {
+  background: transparent;
   font-size: 1rem;
 }
 
-.reflection-lines {
+.app-greeting {
   display: grid;
-  gap: 12px;
-  margin: 36px 0;
+  place-items: center;
+  min-height: 134px;
+  padding: 10px 18px;
+  text-align: center;
 }
 
-.reflection-lines span {
-  height: 14px;
-  border-radius: 999px;
-  background: rgba(169, 184, 160, 0.34);
+.app-greeting p {
+  max-width: 250px;
+  margin: 0;
+  color: var(--forest);
+  font-size: 1.42rem;
+  line-height: 1.25;
 }
 
-.reflection-lines span:nth-child(2) {
-  width: 76%;
+.voice-card {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  min-height: 198px;
+  padding: 31px 20px 24px;
+  border-radius: 24px;
+  color: var(--card);
+  background: var(--forest);
 }
 
-.reflection-lines span:nth-child(3) {
-  width: 56%;
+.waveform {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 62px;
 }
 
-.insight-card {
-  padding: 18px;
-  border: 1px solid rgba(111, 148, 107, 0.2);
-  border-radius: 20px;
+.waveform span {
+  width: 4px;
+  border-radius: 99px;
   background: var(--card);
 }
 
-.insight-card span {
-  display: block;
-  color: var(--moss);
-  font-size: 0.75rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.waveform span:nth-child(1) { height: 15px; }
+.waveform span:nth-child(2) { height: 32px; }
+.waveform span:nth-child(3) { height: 48px; }
+.waveform span:nth-child(4) { height: 62px; }
+.waveform span:nth-child(5) { height: 42px; }
+.waveform span:nth-child(6) { height: 28px; }
+.waveform span:nth-child(7) { height: 18px; }
+
+.record-button {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 2px solid rgba(216, 179, 106, 0.9);
+  border-radius: 50%;
+  background: rgba(169, 184, 160, 0.2);
 }
 
-.insight-card strong {
-  display: block;
-  margin-top: 6px;
+.record-button::after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  background: var(--card);
+}
+
+.write-divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.write-divider span {
+  height: 1px;
+  background: var(--line);
+}
+
+.note-input {
+  min-height: 82px;
+  padding: 18px 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  color: var(--muted);
+  background: var(--card);
+  box-shadow: 0 10px 24px rgba(31, 42, 35, 0.06);
+}
+
+.bottom-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-top: 27px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.bottom-tabs span {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  font-size: 1.35rem;
+}
+
+.bottom-tabs small {
+  font-size: 0.64rem;
+  font-weight: 750;
+}
+
+.bottom-tabs .active {
   color: var(--forest);
-  font-size: 1.05rem;
 }
 
 .section {
@@ -1195,13 +1279,70 @@ details.faq-card p {
     width: 100%;
   }
 
-  .phone-screen {
-    min-height: 430px;
-    padding: 22px;
+  .iphone-showcase {
+    width: min(100%, 340px);
   }
 
-  .reflection-question {
-    margin-top: 34px;
+  .iphone-frame {
+    padding: 11px;
+    border-radius: 46px;
+  }
+
+  .iphone-frame::before {
+    left: -3px;
+    top: 118px;
+    height: 58px;
+  }
+
+  .iphone-frame::after {
+    right: -3px;
+    top: 156px;
+    height: 76px;
+  }
+
+  .iphone-screen {
+    min-height: 635px;
+    padding: 14px 16px 16px;
+    border-radius: 35px;
+  }
+
+  .dynamic-island {
+    width: 82px;
+    height: 25px;
+  }
+
+  .app-toolbar {
+    margin-top: 20px;
+  }
+
+  .app-greeting {
+    min-height: 116px;
+  }
+
+  .app-greeting p {
+    max-width: 220px;
+    font-size: 1.22rem;
+  }
+
+  .voice-card {
+    min-height: 172px;
+    padding: 26px 18px 22px;
+  }
+
+  .note-input {
+    min-height: 70px;
+  }
+
+  .bottom-tabs {
+    margin-top: 22px;
+  }
+
+  .bottom-tabs span {
+    font-size: 1.12rem;
+  }
+
+  .bottom-tabs small {
+    font-size: 0.58rem;
   }
 
   .footer-grid {
