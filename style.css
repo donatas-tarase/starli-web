@@ -255,6 +255,10 @@ summary:focus-visible {
   justify-content: flex-end;
 }
 
+.mobile-sticky-cta {
+  display: none;
+}
+
 .text-link {
   color: var(--forest);
   font-weight: 850;
@@ -1721,5 +1725,29 @@ details.faq-card p {
 
   .footer-links {
     justify-content: flex-start;
+  }
+
+  .mobile-sticky-cta {
+    position: fixed;
+    z-index: 70;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    display: block;
+    padding: 8px;
+    border: 1px solid rgba(229, 225, 216, 0.88);
+    border-radius: 999px;
+    background: rgba(247, 244, 239, 0.9);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 18px 44px rgba(31, 42, 35, 0.18);
+  }
+
+  .mobile-sticky-cta .button {
+    min-height: 50px;
+  }
+
+  .mobile-sticky-cta + .site-footer {
+    padding-bottom: 112px;
   }
 }
