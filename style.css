@@ -410,9 +410,10 @@ p {
 }
 
 .iphone-screen {
+  position: relative;
   overflow: hidden;
-  min-height: 740px;
-  padding: 16px 20px 18px;
+  height: 740px;
+  padding: 16px 20px 0;
   border-radius: 40px;
   background: var(--warm-white);
 }
@@ -427,9 +428,93 @@ p {
   font-weight: 850;
 }
 
-.ios-status span:last-child {
+.ios-right {
+  display: inline-flex;
   justify-self: end;
-  letter-spacing: -0.18em;
+  align-items: center;
+  gap: 7px;
+}
+
+.ios-signal {
+  position: relative;
+  width: 3px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.ios-signal::before,
+.ios-signal::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.ios-signal::before {
+  left: -5px;
+  height: 4px;
+}
+
+.ios-signal::after {
+  left: 5px;
+  height: 10px;
+}
+
+.ios-wifi {
+  position: relative;
+  width: 16px;
+  height: 11px;
+  border-top: 3px solid var(--ink);
+  border-radius: 16px 16px 0 0;
+  opacity: 0.92;
+}
+
+.ios-wifi::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.ios-battery {
+  position: relative;
+  width: 22px;
+  height: 11px;
+  border: 2px solid var(--ink);
+  border-radius: 3px;
+}
+
+.ios-battery::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 13px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.ios-battery::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 2px;
+  width: 2px;
+  height: 5px;
+  border-radius: 0 2px 2px 0;
+  background: var(--ink);
+}
+
+.ios-status > span:last-child {
+  justify-self: end;
 }
 
 .dynamic-island {
@@ -439,144 +524,337 @@ p {
   background: #050706;
 }
 
-.app-toolbar {
+.app-content {
+  display: grid;
+  gap: 12px;
+  height: calc(100% - 31px);
+  padding-top: 20px;
+  padding-bottom: 92px;
+  overflow: hidden;
+}
+
+.app-header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
+  gap: 12px;
 }
 
-.leaf-mark,
-.toolbar-icon {
+.app-header p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.58rem;
+  font-weight: 700;
+  line-height: 1.06;
+}
+
+.relationship-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 146px;
+  min-height: 38px;
+  padding: 5px 7px;
+  border-radius: 16px;
+  color: var(--forest);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.relationship-pill > span:not(.relationship-icon) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.relationship-icon {
   display: grid;
   place-items: center;
-  width: 36px;
-  height: 36px;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(111, 148, 107, 0.18);
   border-radius: 50%;
   color: var(--forest);
-  background: rgba(169, 184, 160, 0.28);
-  font-weight: 900;
+  background: rgba(111, 148, 107, 0.1);
 }
 
-.toolbar-icon {
-  background: transparent;
-  font-size: 1rem;
+.relationship-icon svg,
+.relationship-pill .chevron {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
 }
 
-.app-greeting {
-  display: grid;
-  place-items: center;
-  min-height: 134px;
-  padding: 10px 18px;
-  text-align: center;
+.relationship-pill .chevron {
+  flex: 0 0 auto;
+  opacity: 0.66;
 }
 
-.app-greeting p {
-  max-width: 250px;
-  margin: 0;
-  color: var(--forest);
-  font-size: 1.42rem;
-  line-height: 1.25;
+.pulse-card,
+.reflection-insight-card {
+  border: 1px solid rgba(229, 225, 216, 0.86);
+  background: var(--card);
+  box-shadow: 0 8px 18px rgba(31, 42, 35, 0.055);
 }
 
-.voice-card {
-  display: grid;
-  justify-items: center;
-  gap: 18px;
-  min-height: 198px;
-  padding: 31px 20px 24px;
-  border-radius: 24px;
-  color: var(--card);
-  background: var(--forest);
-}
-
-.waveform {
+.pulse-card {
   display: flex;
   align-items: center;
-  gap: 5px;
-  min-height: 62px;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 24px;
 }
 
-.waveform span {
-  width: 4px;
-  border-radius: 99px;
-  background: var(--card);
+.pulse-card h3,
+.reflection-insight-card h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.22;
 }
 
-.waveform span:nth-child(1) { height: 15px; }
-.waveform span:nth-child(2) { height: 32px; }
-.waveform span:nth-child(3) { height: 48px; }
-.waveform span:nth-child(4) { height: 62px; }
-.waveform span:nth-child(5) { height: 42px; }
-.waveform span:nth-child(6) { height: 28px; }
-.waveform span:nth-child(7) { height: 18px; }
+.pulse-card p {
+  margin: 4px 0 9px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
 
-.record-button {
+.pulse-card strong {
+  color: var(--moss);
+  font-size: 2.05rem;
+  line-height: 1;
+}
+
+.pulse-card strong span {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.pulse-ring {
+  position: relative;
   display: grid;
   place-items: center;
-  width: 54px;
-  height: 54px;
-  border: 2px solid rgba(216, 179, 106, 0.9);
-  border-radius: 50%;
-  background: rgba(169, 184, 160, 0.2);
+  width: 96px;
+  height: 96px;
 }
 
-.record-button::after {
-  content: "";
-  width: 17px;
-  height: 17px;
-  border-radius: 5px;
-  background: var(--card);
+.pulse-ring > svg:first-child {
+  width: 96px;
+  height: 96px;
 }
 
-.write-divider {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+.pulse-track,
+.pulse-progress {
+  fill: none;
+  stroke-width: 10;
+}
+
+.pulse-track {
+  stroke: rgba(229, 225, 216, 0.78);
+}
+
+.pulse-progress {
+  stroke: var(--moss);
+  stroke-linecap: round;
+  stroke-dasharray: 223 302;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.pulse-mark {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  color: var(--moss);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reflection-insight-card {
+  padding: 15px;
+  border-radius: 22px;
+}
+
+.insight-card-top {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
-  margin: 16px 0;
+  margin-bottom: 8px;
+}
+
+.mini-label {
+  margin: 0;
+  color: var(--moss);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.insight-card-top span {
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: var(--forest);
+  background: rgba(169, 184, 160, 0.22);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.reflection-insight-card h3 {
+  font-size: 1.02rem;
+}
+
+.reflection-text {
+  margin: 7px 0 0;
   color: var(--muted);
   font-size: 0.82rem;
+  line-height: 1.38;
 }
 
-.write-divider span {
-  height: 1px;
-  background: var(--line);
+.why-row,
+.next-step {
+  display: flex;
+  gap: 9px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(169, 184, 160, 0.13);
 }
 
-.note-input {
-  min-height: 82px;
-  padding: 18px 18px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
+.why-row span,
+.next-step span {
+  flex: 0 0 auto;
+  color: var(--forest);
+  font-size: 0.7rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.why-row p,
+.next-step p {
+  margin: 0;
   color: var(--muted);
-  background: var(--card);
-  box-shadow: 0 10px 24px rgba(31, 42, 35, 0.06);
+  font-size: 0.76rem;
+  line-height: 1.34;
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 11px;
+}
+
+.metric-row div {
+  min-width: 0;
+  padding: 9px 7px;
+  border: 1px solid rgba(229, 225, 216, 0.72);
+  border-radius: 15px;
+  background: rgba(247, 244, 239, 0.72);
+}
+
+.metric-row span {
+  display: block;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.metric-row strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--forest);
+  font-size: 1.24rem;
+  line-height: 1;
+}
+
+.mini-trend {
+  height: 44px;
+  margin-top: 7px;
+}
+
+.mini-trend svg {
+  width: 100%;
+  height: 100%;
+}
+
+.trend-area {
+  fill: rgba(111, 148, 107, 0.14);
+}
+
+.trend-line {
+  fill: none;
+  stroke: var(--moss);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mini-trend circle {
+  fill: var(--moss);
 }
 
 .bottom-tabs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-  margin-top: 27px;
+  gap: 2px;
+  height: 76px;
+  padding: 8px 18px 20px;
+  border-top: 1px solid rgba(229, 225, 216, 0.64);
   color: var(--muted);
+  background: rgba(247, 244, 239, 0.92);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   text-align: center;
 }
 
 .bottom-tabs span {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4px;
-  font-size: 1.35rem;
+  min-width: 0;
+  color: inherit;
+}
+
+.tab-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
 }
 
 .bottom-tabs small {
+  max-width: 100%;
+  overflow: hidden;
   font-size: 0.64rem;
   font-weight: 750;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .bottom-tabs .active {
-  color: var(--forest);
+  color: var(--moss);
 }
 
 .section {
@@ -1301,8 +1579,8 @@ details.faq-card p {
   }
 
   .iphone-screen {
-    min-height: 635px;
-    padding: 14px 16px 16px;
+    height: 635px;
+    padding: 14px 16px 0;
     border-radius: 35px;
   }
 
@@ -1311,38 +1589,130 @@ details.faq-card p {
     height: 25px;
   }
 
-  .app-toolbar {
-    margin-top: 20px;
+  .app-content {
+    gap: 9px;
+    padding-top: 17px;
+    padding-bottom: 84px;
   }
 
-  .app-greeting {
-    min-height: 116px;
+  .app-header {
+    gap: 8px;
   }
 
-  .app-greeting p {
-    max-width: 220px;
+  .app-header p {
     font-size: 1.22rem;
   }
 
-  .voice-card {
-    min-height: 172px;
-    padding: 26px 18px 22px;
+  .relationship-pill {
+    max-width: 118px;
+    min-height: 34px;
+    gap: 5px;
+    padding: 4px 6px;
+    font-size: 0.8rem;
   }
 
-  .note-input {
-    min-height: 70px;
+  .relationship-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .pulse-card {
+    gap: 12px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .pulse-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .pulse-card p {
+    margin-bottom: 7px;
+    font-size: 0.7rem;
+  }
+
+  .pulse-card strong {
+    font-size: 1.62rem;
+  }
+
+  .pulse-ring,
+  .pulse-ring > svg:first-child {
+    width: 76px;
+    height: 76px;
+  }
+
+  .pulse-mark {
+    width: 27px;
+    height: 27px;
+  }
+
+  .reflection-insight-card {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .reflection-insight-card h3 {
+    font-size: 0.92rem;
+  }
+
+  .reflection-text {
+    font-size: 0.72rem;
+    line-height: 1.38;
+  }
+
+  .why-row,
+  .next-step {
+    gap: 7px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .why-row span,
+  .next-step span {
+    font-size: 0.62rem;
+  }
+
+  .why-row p,
+  .next-step p {
+    font-size: 0.68rem;
+  }
+
+  .metric-row {
+    gap: 5px;
+    margin-top: 9px;
+  }
+
+  .metric-row div {
+    padding: 7px 6px;
+    border-radius: 13px;
+  }
+
+  .metric-row span {
+    font-size: 0.54rem;
+  }
+
+  .metric-row strong {
+    font-size: 1.02rem;
+  }
+
+  .mini-trend {
+    height: 42px;
+    margin-top: 7px;
   }
 
   .bottom-tabs {
-    margin-top: 22px;
+    height: 72px;
+    padding: 7px 14px 18px;
   }
 
-  .bottom-tabs span {
-    font-size: 1.12rem;
+  .tab-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .bottom-tabs small {
-    font-size: 0.58rem;
+    font-size: 0.55rem;
   }
 
   .footer-grid {
