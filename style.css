@@ -383,6 +383,14 @@ p {
   width: min(100%, 405px);
 }
 
+.product-preview-caption {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 .iphone-frame {
   position: relative;
   padding: 13px;
@@ -918,6 +926,7 @@ p {
 }
 
 .problem-grid,
+.use-case-grid,
 .feature-grid,
 .feature-list-grid,
 .product-grid,
@@ -934,6 +943,10 @@ p {
 .product-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+}
+
+.use-case-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .principles-grid {
@@ -1089,6 +1102,36 @@ p {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255, 253, 249, 0.74);
+}
+
+.founder-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(24px, 6vw, 64px);
+  align-items: start;
+  padding: clamp(28px, 5vw, 46px);
+  border: 1px solid rgba(201, 160, 90, 0.24);
+  border-radius: 30px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+
+.founder-panel h2 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(1.75rem, 3.6vw, 2.85rem);
+  line-height: 1.1;
+}
+
+.founder-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.founder-copy p + p {
+  margin-top: 16px;
 }
 
 .faq-grid {
@@ -1487,10 +1530,15 @@ details.faq-card p {
   .feature-list-grid,
   .feature-grid,
   .problem-grid,
+  .use-case-grid,
   .steps-grid,
   .blog-card-grid,
   .contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .founder-panel {
+    grid-template-columns: 1fr;
   }
 
   .button-row.end {
@@ -1544,6 +1592,7 @@ details.faq-card p {
   .feature-grid,
   .feature-list-grid,
   .product-grid,
+  .use-case-grid,
   .steps-grid,
   .blog-card-grid,
   .contact-grid,

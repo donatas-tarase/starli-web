@@ -9,8 +9,10 @@ Static GitHub Pages website for Starli and Starli labs, MB.
 - `labs/index.html` — Starli Labs company and product portfolio page.
 - `blog/index.html` — English blog index.
 - `blog/reflect-after-difficult-conversation.html` — English pillar article.
+- `blog/relationship-journal-prompts.html` — English prompt article.
 - `lt/blog/index.html` — Lithuanian blog index.
 - `lt/blog/refleksija-po-sunkaus-pokalbio.html` — Lithuanian article.
+- `lt/blog/santykiu-dienorascio-klausimai.html` — Lithuanian prompt article.
 - `privacy.html`, `terms.html`, `contact.html` — company legal and contact pages.
 - `digital-downloads.html`, `digital-downloads-privacy.html`, `digital-downloads-terms.html` — preserved Digital Downloads pages.
 - `starli.html` — compatibility redirect to the root Starli homepage.
@@ -31,11 +33,7 @@ Then open `http://127.0.0.1:8000/`.
 
 ## App Store URL
 
-The Starli App Store CTA is centralized in:
-
-- `app-store.html`
-
-All visible App Store CTA buttons link to this local redirect page. Update the official Apple URL there if the App Store listing URL ever changes.
+Visible Starli App Store CTA buttons link directly to the official Apple listing. `app-store.html` remains as a noindex compatibility redirect and fallback page.
 
 Verified listing at time of update:
 
@@ -79,7 +77,7 @@ Avoid thin placeholder posts, invented research citations, fake testimonials, or
 
 - No page says the live app is "in development".
 - No internal links point to `starli.html` except the compatibility page itself.
-- App Store CTAs open `app-store.html`, then the official Apple listing.
+- App Store CTAs open the official Apple listing directly; `app-store.html` remains a noindex fallback redirect.
 - `privacy.html`, `terms.html`, `contact.html`, and Digital Downloads URLs still work.
 - No local development URLs, absolute local filesystem paths, `href="#"`, or placeholder URLs remain in production HTML.
 - Metadata, canonical URLs, and `hreflang` tags match the public URL structure.
