@@ -6,8 +6,9 @@ Static GitHub Pages website for Starli and Starli labs, MB.
 
 - `index.html` — English Starli product landing page.
 - `lt/index.html` — Lithuanian Starli product landing page.
-- `labs/index.html` — Starli Labs company and product portfolio page.
-- `blog/index.html` — English blog index.
+- `labs/index.html`, `lt/labs/index.html` — bilingual Starli Labs portfolio; associated pages, styles and assets live under `labs/` and `lt/labs/`.
+- `blog/index.html`, `lt/blog/index.html` — bilingual blog indexes, currently featuring Digital Downloads.
+- `blog/digital-product-delivery.html`, `lt/blog/digital-product-delivery.html` — Digital Downloads article.
 - `blog/reflect-after-difficult-conversation.html` — English pillar article.
 - `blog/relationship-journal-prompts.html` — English prompt article.
 - `lt/blog/index.html` — Lithuanian blog index.
