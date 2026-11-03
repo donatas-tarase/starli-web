@@ -4,9 +4,9 @@ Static GitHub Pages website for Starli and Starli labs, MB.
 
 ## Structure
 
-- `index.html` — English Starli product landing page.
-- `lt/index.html` — Lithuanian Starli product landing page.
-- `labs/index.html`, `lt/labs/index.html` — bilingual Starli Labs portfolio; associated pages, styles and assets live under `labs/` and `lt/labs/`.
+- `index.html` — English personal portfolio landing page.
+- `lt/index.html` — Lithuanian personal portfolio landing page.
+- `labs/index.html`, `lt/labs/index.html` — compatibility redirects to the bilingual landing pages; associated pages, styles and assets live under `labs/` and `lt/labs/`.
 - `blog/index.html`, `lt/blog/index.html` — bilingual blog indexes, currently featuring Digital Downloads.
 - `blog/digital-product-delivery.html`, `lt/blog/digital-product-delivery.html` — Digital Downloads article.
 - `blog/reflect-after-difficult-conversation.html` — English pillar article.
@@ -16,7 +16,7 @@ Static GitHub Pages website for Starli and Starli labs, MB.
 - `lt/blog/santykiu-dienorascio-klausimai.html` — Lithuanian prompt article.
 - `privacy.html`, `terms.html`, `contact.html` — company legal and contact pages.
 - `digital-downloads.html`, `digital-downloads-privacy.html`, `digital-downloads-terms.html` — preserved Digital Downloads pages.
-- `starli.html` — compatibility redirect to the root Starli homepage.
+- `starli.html` — compatibility redirect to the Starli Mind product page.
 - `app-store.html` — centralized App Store redirect and fallback link.
 - `404.html` — GitHub Pages error page.
 - `style.css` — shared visual system and layout CSS.
