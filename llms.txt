@@ -1,0 +1,22 @@
+# Starli Labs
+
+> Donatas Tarasevičius builds apps, websites and plugins through Starli Labs, MB. Services include Wix and Shopify apps, WooCommerce plugins, custom websites, maintenance and improvements. Based in Kaunas, Lithuania. Project enquiries: hi@starli.app. Product support: support@starli.app.
+
+## Start here
+- [English homepage](https://starli.app/index.md): Full text version of the homepage, including services, selected work, existing review quotes and Donatas’s story.
+- [Lietuviškai](https://starli.app/lt/index.md): Lietuviška pagrindinio puslapio tekstinė versija.
+- [Portfolio](https://starli.app/labs/work.html): Project descriptions and links to their official listings.
+- [Contact](https://starli.app/labs/contact.html): Email a description of the project, a website link and the intended result. There is no on-site appointment booking.
+
+## Selected products
+- [Digital Downloads](https://starli.app/labs/digital-downloads.html): Wix app for digital products and file delivery after purchase.
+- [Search & Filter](https://starli.app/labs/search-filter.html): Product search and filters for Wix stores.
+- [Bundles](https://starli.app/labs/bundles.html): Donatas’s work on a product bundles app. The homepage testimonials concern this app and its team’s support.
+- [Starli Mind](https://starli.app/labs/starli-mind.html): Donatas’s first own iOS app.
+
+## Policies and practical information
+- [Privacy](https://starli.app/privacy.html)
+- [Terms](https://starli.app/terms.html)
+- [Digital Downloads privacy](https://starli.app/digital-downloads-privacy.html)
+- [Digital Downloads terms](https://starli.app/digital-downloads-terms.html)
+- [Sitemap](https://starli.app/sitemap.xml): Public page directory, including Lithuanian equivalents.

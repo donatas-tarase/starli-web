@@ -1,0 +1,67 @@
+/* Clear service offer and early proof, within the existing poster design. */
+.conversion-home .hero-text-only .human-copy{max-width:1040px}
+.conversion-home .narrative-hero .human-stage{padding:48px 0 58px}
+.conversion-home .narrative-hero h1{font-size:clamp(48px,5.6vw,78px);line-height:1;max-width:960px;text-wrap:balance}
+.conversion-home .hero-poster>p.hero-intro-label{font:700 12px/1.5 'Courier New',monospace;letter-spacing:.03em;margin:0 0 22px}
+.conversion-home .hero-poster>p{max-width:760px;font-size:18px;line-height:1.6;margin-top:22px}
+.conversion-home .human-links{justify-content:flex-start;flex-wrap:wrap;gap:24px;margin-top:28px}
+.conversion-home .button.primary-contact{background:var(--pink);color:#090909;border:2px solid #090909;border-radius:0;box-shadow:4px 4px #090909;font-size:16px;font-weight:800;line-height:1.35;padding:18px 24px;min-height:56px;text-align:center;justify-content:center}
+.conversion-home .button.primary-contact:hover{background:var(--lilac);transform:translate(-2px,-2px);box-shadow:6px 6px #090909}
+.conversion-home .human-links .hero-work{font-size:12px;line-height:1.5;max-width:none}
+.conversion-home .contact-small{color:#090909;font-size:14px;min-height:44px}
+.conversion-home .proof-section{padding-block:62px}
+.conversion-home .proof-section h2{font-size:clamp(36px,4vw,58px);line-height:1.03;text-wrap:balance}
+.proof-intro{font-size:17px;margin-top:18px;max-width:700px}
+.proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.proof-grid .review-card{padding:24px;display:flex;flex-direction:column;min-width:0}
+.proof-grid .review-card:first-child{background:var(--green)}
+.proof-grid .review-card blockquote{font-size:17px;line-height:1.55;margin:0 0 18px;letter-spacing:-.02em}
+.proof-grid .review-card>p[lang]{font-size:15px;margin-bottom:16px}
+.proof-grid .review-card .review-context{font-size:12px;margin-bottom:16px}
+.proof-grid .review-card .review-stars{color:#090909;font-size:20px;letter-spacing:2px}
+.proof-grid .review-card>a{margin-top:auto;padding-top:12px;font-size:12px}
+.proof-section .reviews-note{font-size:12px;line-height:1.6;margin-top:26px}
+.proof-action{display:flex;justify-content:center;margin-top:28px}
+.conversion-home .services{padding-block:64px}
+.conversion-home .services h2{font-size:clamp(38px,4vw,58px);line-height:1.05}
+.conversion-home .service-grid{margin-top:30px}
+.conversion-home .service{display:flex;flex-direction:column;transform:none}
+.conversion-home .service a{color:#090909;border-color:#090909;align-self:flex-start;font-size:14px;line-height:1.5;padding:10px 0 5px;margin-top:auto}
+.conversion-home .service p{margin-bottom:18px}
+.conversion-home .service-cta{box-shadow:4px 4px var(--paper)}
+.platform-strip{background:var(--pink);border-block:2px solid #090909;padding:22px 24px}
+.platform-strip ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:16px 30px;margin:0;padding:0}
+.platform-strip li{font-size:14px;font-weight:800;line-height:1.5}
+.conversion-home .contact-instructions{max-width:640px;font-size:18px;line-height:1.6;margin-bottom:30px}
+.conversion-home a:focus-visible,.conversion-home button:focus-visible{outline:3px solid currentColor;outline-offset:6px}
+.conversion-home .primary-contact:focus-visible{outline-color:#090909}
+.conversion-home .services .primary-contact:focus-visible{outline-color:white}
+.mobile-contact{display:none}
+@media(max-width:1100px){.proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.conversion-home .human-links{gap:20px}.conversion-home .narrative-hero .hero-poster{padding:32px}}
+@media(max-width:760px){
+ html{scroll-padding-bottom:100px}
+ .conversion-home{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+ .conversion-home .narrative-hero .human-stage{padding:30px 0 38px}
+ .conversion-home .narrative-hero .hero-poster{padding:24px 21px;transform:none}
+ .conversion-home .narrative-hero h1{font-size:clamp(34px,8.5vw,56px);line-height:1.04;letter-spacing:-.055em}
+ .conversion-home .hero-poster>p.hero-intro-label{font-size:10px;margin-bottom:17px}
+ .conversion-home .hero-poster>p{font-size:16px;line-height:1.55;margin-top:18px}
+ .conversion-home .human-links{gap:19px;margin-top:23px}
+ .conversion-home .human-links .primary-contact{width:100%;font-size:15px;padding:16px 12px}
+ .conversion-home .human-links .hero-work{font-size:11px}
+ .conversion-home .proof-section,.conversion-home .services{padding-block:44px}
+ .proof-grid{grid-template-columns:1fr;gap:20px}
+ .proof-grid .review-card{padding:23px}
+ .proof-intro{font-size:16px}
+ .proof-action .primary-contact{font-size:15px}
+ .conversion-home .service-grid{gap:20px}
+ .platform-strip{padding:20px}
+ .platform-strip ul{gap:12px 20px}
+ .platform-strip li{font-size:12px}
+ .conversion-home .contact-instructions{font-size:16px}
+ .mobile-contact{position:fixed;bottom:0;left:0;right:0;z-index:8;display:flex;align-items:center;justify-content:center;min-height:70px;padding:18px 15px calc(18px + env(safe-area-inset-bottom));border-top:2px solid #090909;background:var(--pink);color:#090909;font-size:16px;font-weight:800;box-shadow:0 -5px 0 #090909}
+ .mobile-contact:focus-visible{outline-offset:-7px!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Keep the contact address visible after jumping here on a small screen. */
+@media(max-width:760px){.conversion-home .contact h2{font-size:clamp(42px,12vw,65px);line-height:1;letter-spacing:-.055em;margin:24px 0}.conversion-home .contact{padding-block:36px}.conversion-home .contact-instructions{margin-bottom:24px}}
