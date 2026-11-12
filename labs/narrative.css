@@ -98,3 +98,6 @@
 .life-first .life-copy h2 em{background:var(--pink)}
 .teacher-quote{margin:25px 0 28px;padding:20px 23px;border-left:6px solid var(--pink);background:#e7f8e5;font-size:25px;font-weight:800;line-height:1.35;letter-spacing:-.035em}
 @media(max-width:760px){.life-first{padding-block:55px}.teacher-quote{font-size:23px;padding:18px 20px}}
+
+/* Published Workflow app portfolio card. */
+.product-workflow-automation .product-media{background:#31ec56}
